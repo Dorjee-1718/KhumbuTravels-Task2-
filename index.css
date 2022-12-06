@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;   
+}
+
+.main-page{
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-container{
+    height: 85%;
+    background-image: url("./images/hero.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.8;
+    color: white;
+    font-weight: 500;
+}
+
+.logo-container{
+    width: 20%;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 50px;
+    /* background-color: beige; */
+}
+
+.logo-container > img{
+    /* background-color: aqua; */
+    width: 30% ;
+    height: auto;
+    margin-right: 20px;
+}
+
+.logo-title{
+    font-size: large;
+    font-weight: 600;
+}
+
+.nav-bar{
+    /* background-color: aqua; */
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size:small;
+    font-weight: 400;
+}
+
+
+.nav-container{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar > div:hover{
+    text-decoration: underline;
+
+}
+
+.heading-container{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size:45px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-main{
+    font-size: 55px;
+    font-weight:900;
+
+}
+
+.search-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container{
+    width: 1000px;
+    height: 100px;
+    background-color:beige;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0px, -50px);
+}
+
+#place, #travel-style, #period{
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color:rgba(178, 172, 172, 0.755);
+    margin: 0px;
+}
+
+.search-btn{
+    background-color:rgb(50, 134, 180);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 30px;
+    margin: 5px;
+    color: white;
+    border-width: 0;
+    border-radius: 3px;
+}
+
+button > img{
+    height: 15px;
+    margin-left: 5px;
+}
+
+button:hover{
+    background-color: rgb(3, 53, 79);
+    color: white;
+}
+
+.second-page{
+    background-color: beige;
+    width: 100%;
+    height: 100vh;
+}
+
+.about-container{
+    /*background-color: aqua;*/
+    width: inherit;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-us-wrapper, .about-image{
+    width: 50%;
+    height: 100%;
+}
+
+.about-us-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+.about-us{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.about-heading{
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.about-subheading{
+    width: 70%;
+    height: auto;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about-text{
+    width: 80%;
+    height: fit-content;
+    font-weight: lighter;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+
+.read-more-container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.read-more-text{
+    font-weight: 500;
+    margin-right: 10px;
+
+}
+
+.about-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image-container{
+    position: relative;
+    width: 90%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.about-image-container > img{
+    width: 60%;
+    height: 350px;
+    border-radius: 5px;
+   
+}
+
+
+.everest-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 140px;
+    background-image: url("./images/everest.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10px;   
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+
+
