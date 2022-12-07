@@ -4,7 +4,7 @@ body{
     font-family: 'Poppins', sans-serif;   
 }
 
-.main-page{
+.page{
     width: 100%;
     height: 100vh;
 }
@@ -26,11 +26,9 @@ body{
     flex-direction: row;
     align-items: center;
     margin: 0px 50px;
-    /* background-color: beige; */
 }
 
 .logo-container > img{
-    /* background-color: aqua; */
     width: 30% ;
     height: auto;
     margin-right: 20px;
@@ -42,8 +40,7 @@ body{
 }
 
 .nav-bar{
-    /* background-color: aqua; */
-    width: 60%;
+    width: 45%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -57,7 +54,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-bar > div:hover{
@@ -133,15 +130,13 @@ button:hover{
     color: white;
 }
 
-.second-page, .third-page{
-    /* background-color: beige; */
+
+.third-page, .fourth-page{
     width: 100%;
     height: 100vh;
-}
-
-.third-page{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -175,11 +170,12 @@ button:hover{
 }
 
 .heading{
-    font-size: x-large;
+    font-size:xx-large;
     font-weight: 700;
     margin-bottom: 20px;
 }
 .subheading{
+    font-size: large;
     width: 70%;
     height: auto;
     font-weight: 500;
@@ -202,6 +198,7 @@ button:hover{
 }
 
 .read-more-text{
+    font-size: 14px;
     font-weight: 500;
     margin-right: 10px;
 
@@ -248,7 +245,7 @@ button:hover{
 }
 
 .services-container{
-    margin-top: 40px;
+    margin-top: 30px;
     width: inherit;
    
 }
@@ -278,6 +275,7 @@ button:hover{
 .service-image-container > img{
     width: 70%;
     height: 70%;
+    opacity: 0.8;
 }
 
 .service-item{
@@ -311,7 +309,7 @@ button:hover{
 .contact-wrapper{
     width: 80%;
     height: 50%;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .contact-btn{
@@ -338,6 +336,64 @@ button:hover{
     align-items: center;
 }
 
+.trip-container{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.trip-nav-bar{   
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    font-size:small;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.first-trip-nav-item, .trip-nav-item{
+    padding-right: 8%;
+}
+
+.trip-nav-item, .last-trip-nav-item{
+    padding-left: 3%;
+}
+
+.first-trip-nav-item, .trip-nav-item, .last-trip-nav-item{
+    border-bottom: 2px solid;
+    border-color: rgba(158, 154, 154, 0.74);
+}
+
+.first-trip-nav-item:hover, .trip-nav-item:hover, .last-trip-nav-item:hover{
+    border-color: rgb(0, 138, 213);
+}
+
+.trip-item-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-item-wrapper > img{
+    height: 55%;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.trip-text-container{
+    padding: 10px 0 0 5px;
+}
+
+.page-wrapper{
+    width: 85%;
+    height: 90%;
+}
+
+#trip-subheading{
+    width:fit-content;
+}
 
 
 
