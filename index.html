@@ -12,7 +12,7 @@
     
 </head>
 <body>
-    <div class="page">
+    <div class="page home-page">
         <div class="hero-container">
             <div class="nav-container">
                 <div class="logo-container">
@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div class="page">
+    <div class="page about-page">
         <div class="about-container">
             <div class="about-us-wrapper">
                 <div class="about-us">
@@ -103,6 +103,10 @@
             </div>
 
         </div>
+
+    </div>
+
+    <div class="page services-page">
 
         <div class="services-container">
             <div class="services-wrapper">
@@ -153,60 +157,34 @@
             </div>
         </div>
 
-    </div>
+        <div class="touch-container">
+            <div class="touch-wrapper">
+                <div class="touch-text">
 
-    <div class="third-page">
-        <div class="contact-container">
-            <div class="contact-wrapper">
-                <div class="heading">
-                    Contact Us
+                    <div class="heading">
+                        Stay in touch
+                    </div>
+    
+                    <div class="text">
+                        Subscribe to our newsletter and receive notfications of favourite offers and news.
+                        No spam, just useful information.
+    
+                    </div>
                 </div>
-                <div class="text">
-                    Feel free to contact us. Request a call by entering your phone in 
-                    the column below. We'll necessarily call you back within 5 minutes.
-                </div>
-                <div class="contact-form">
+    
+                <div class="contact-form touch-form">
                     <form>
-                        <input type="text" id="phone" name="phone" placeholder="Enter your phone">
+                        <input type="text" id="email" name="email" placeholder="Enter e-mail">
                     </form>
-                    <button type="submit" class="contact-btn">Request</button>
-                </div>
-                <div class="contact-details-container">
-                    <div class="contact-detail-item">
-                        <img>
-                        <div class="contact-detail-text">
-                            Thamel, Kathmandu
-                        </div>
-                    </div>
-
-                    <div class="contact-detail-item">
-                        <img>
-                        <div class="contact-detail-text">
-                            Support@khumbutravels.com
-                        </div>
-                    </div>
-
-                    <div class="contact-detail-item">
-                        <img>
-                        <div class="contact-detail-text">
-                            +977 9813452365
-                        </div>
-                    </div>
-
+                    <button type="submit" class="contact-btn">Subscribe</button>
                 </div>
 
             </div>
-            
         </div>
 
-        <div class="contact-image-container">
-            <img src="./images/contact.jpg">
-        </div>
+    </div> 
 
-
-    </div>
-
-    <div class="fourth-page">
+    <div class="page trips-page">
         <div class="page-wrapper">
             <div class="heading">
                 Popular trips
@@ -281,6 +259,150 @@
 
         </div>
     </div>
+
+    <div class="page gallery-page">
+        <div class="fifth-wrapper">
+            <div class="heading" id="gallery-heading">
+                Photo gallery
+            </div>
+            <div class="subheading" id="gallery-subheading">
+                Trekking
+            </div>
+
+            <div class="slideshow-wrapper">
+                <div class="slideshow-container">
+                    <div class="slideshow-item">
+                        <img src="./images/hero.png">
+                        <div class="image-text">Gokyo Lake</div>
+                    </div>
+        
+                    <div class="slideshow-item">
+                        <img src="./images/namche.jpg">
+                        <div class="image-text">Namche Bazaar</div>
+                    </div>
+        
+                    <div class="slideshow-item">
+                        <img src="./images/tengboche.jpeg">
+                        <div class="image-text">Tengboche Monastery</div>
+                    </div>
+        
+                    <div class="slideshow-item">
+                        <img src="./images/everest.jpg">
+                        <div class="image-text">Everest Base Camp</div>
+                    </div>
+        
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>    
+            </div>
+ 
+        </div>
+        
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+
+    </div>
+
+    <div class="page contact-page">
+        <div class="contact-top-wrapper">
+            <div class="contact-container">
+                <div class="contact-wrapper">
+                    <div class="heading">
+                        Contact Us
+                    </div>
+                    <div class="text">
+                        Feel free to contact us. Request a call by entering your phone in 
+                        the column below. We'll necessarily call you back within 5 minutes.
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" id="phone" name="phone" placeholder="Enter your phone">
+                        </form>
+                        <button type="submit" class="contact-btn">Request</button>
+                    </div>
+                    <div class="contact-details-container">
+                        <div class="contact-detail-item">
+                            <img>
+                            <div class="contact-detail-text">
+                                Thamel, Kathmandu
+                            </div>
+                        </div>
+    
+                        <div class="contact-detail-item">
+                            <img>
+                            <div class="contact-detail-text">
+                                Support@khumbutravels.com
+                            </div>
+                        </div>
+    
+                        <div class="contact-detail-item">
+                            <img>
+                            <div class="contact-detail-text">
+                                +977 9813452365
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+                
+            </div>
+
+            <div class="contact-image-container">
+                <img src="./images/contact.jpg">
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="top-footer">
+                <div class="logo-footer">
+                    <img src="./images/logo.png">
+                    <div class="footer-subheading">
+                        KHUMBU TRAVELS
+                    </div>
+                </div>
+
+                <div class="nav-footer">
+                    <div>Home</div>
+                    <div>About us</div>
+                    <div>Popular trips</div>
+                    <div>Gallery</div>
+                    <div>Contact</div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="copyright-footer">
+                    &#169; 2022 Khumbu Travels
+                </div>
+
+                <div class="policy-footer">
+                    <div>Terms of Service</div>
+                    <div>Privacy policy</div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        
+
+        
+
+
+    </div>
+
+    <script src="./index.js"></script>
    
     
 </body>

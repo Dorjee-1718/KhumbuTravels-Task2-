@@ -58,7 +58,7 @@ body{
 }
 
 .nav-bar > div:hover{
-    text-decoration: underline;
+    border-bottom: 2px rgba(6, 159, 241, 0.766) solid;
 
 }
 
@@ -131,19 +131,24 @@ button:hover{
 }
 
 
-.third-page, .fourth-page{
-    width: 100%;
-    height: 100vh;
+.trips-page{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.gallery-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .about-container{
-    /*background-color: aqua;*/
     width: inherit;
-    height: 60%;
+    height: inherit;
     display: flex;
     flex-direction: row;
 }
@@ -213,13 +218,13 @@ button:hover{
 }
 
 .about-image-wrapper{
-    width: 80%;
+    width: 100%;
     height: 80%;
     position: relative;
 }
 
 .stupa-container{
-    width: 55%;
+    width: 70%;
     height: 90%;
     background-image: url("./images/about.jpg");
     background-repeat: no-repeat;
@@ -234,9 +239,9 @@ button:hover{
 .everest-container{
     position: absolute;
     top: 0;
-    right: 35%;
+    right: 18%;
     height: 25%;
-    width: 28%;
+    width: 40%;
     background-image: url("./images/everest.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,23 +250,63 @@ button:hover{
 }
 
 .services-container{
-    margin-top: 30px;
     width: inherit;
-   
+    height: 60%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.touch-container{
+    width: inherit;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: beige;
+}
+
+.touch-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+
+}
+
+.touch-text{
+    flex:45%;
+}
+
+.touch-form{
+    flex:55%;
+    justify-content: flex-end;
+}
+
+#email{
+    height: 26px;
+    width: 300px;
+    border-radius: 5px;
+    border-width: 0.6px;
+    padding-left: 20px;
+    margin-right: 0;
+
 }
 
 .services-wrapper{
+    width: 85%;
     display: flex;
     flex-direction: column;
-    padding-left: 78px;
 }
 
 .service-items-wrapper{
-    width: 80%;
+    width: 100%;
     height: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 30px;
     
 }
 
@@ -285,8 +330,71 @@ button:hover{
     align-items: center;
 }
 
-.contact-container{
-    flex: 60%;
+.contact-top-wrapper{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer{
+    background-color: beige;
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.top-footer, .bottom-footer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.top-footer{
+    border-bottom: 1px black solid;
+}
+.logo-footer{
+    width: 35%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer > img{
+    width: 15%;
+}
+
+.footer-subheading{
+    font-size: large;
+    width: 70%;
+    height: auto;
+    font-weight: 500;
+}
+
+.nav-footer{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-footer{
+    width: 40%;
+}
+
+.policy-footer{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-container, .contact-image-container{
     width: 100%;
     height: 100%;
     display: flex;
@@ -294,22 +402,13 @@ button:hover{
     align-items: center;
 }
 
-.contact-image-container{
-    flex: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .contact-image-container > img{
-    width: 60%;
+    width: 70%;
     height: 80%;
 }
 
 .contact-wrapper{
-    width: 80%;
-    height: 50%;
-    margin-left: 40px;
+    margin-left: 70px;
 }
 
 .contact-btn{
@@ -323,7 +422,7 @@ button:hover{
 }
 
 #phone{
-    height: 25px;
+    height: 26px;
     width: 180px;
     border-radius: 5px;
     border-width: 0.6px;
@@ -374,6 +473,7 @@ button:hover{
 .trip-item-wrapper{
     display: flex;
     flex-direction: column;
+    box-shadow: 10px 5px 30px rgb(197, 196, 196);
 }
 
 .trip-item-wrapper > img{
@@ -383,7 +483,7 @@ button:hover{
 }
 
 .trip-text-container{
-    padding: 10px 0 0 5px;
+    padding: 10px 0 0 10px;
 }
 
 .page-wrapper{
@@ -395,6 +495,90 @@ button:hover{
     width:fit-content;
 }
 
+.fifth-wrapper{
+    width: 80%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+}
 
+.slideshow-wrapper{
+    height: 82%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+.slideshow-container{
+    height: 100%;
+    width: 85%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.slideshow-item{
+    width: 100%;
+    height: 100%;
+    display: none;
+   
+}
+
+.slideshow-item> img{
+    width: 100%;
+    height: 92%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.image-text {
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot-container{
+    text-align: center;
+    height: 5%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
 
